@@ -63,10 +63,10 @@
 
   parksView.renderIndexPage = function() {
     parksObj.fetchParkNames();
-    parksView.handleParksFilter();
   };
 
   parksView.navigateFromParksFilter();
+  parksView.handleParksFilter();
 
   module.parksView = parksView;
 
