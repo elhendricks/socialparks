@@ -38,18 +38,18 @@
 
   parksView.handleParksFilter = function() {
       $('#park-filter').on('change', function(event) {
-        // if ($(this).val()) {
-        //   var codeValue = $(this).val();
-        //   $.ajax({
-        //     url: '/nps/parks?fields=addresses%2Ccontacts%2CentranceFees%2CentrancePasses%2Cimages%2CoperatingHours&parkCode=' + codeValue,
-        //     success: function(data) {
-        //       completeData = data;
-        //       $('#gov-data').append(parksObj.toHtml(completeData));
-        //     }
-        //   });
-        // }
-        // var text = $('option[value='+$(this).val()+']').text();
-        // console.log(text);
+        if ($(this).val()) {
+          var codeValue = $(this).val();
+          $.ajax({
+            url: '/nps/parks?fields=addresses%2Ccontacts%2CentranceFees%2CentrancePasses%2Cimages%2CoperatingHours&parkCode=' + codeValue,
+            success: function(data) {
+              completeData = data;
+              $('#gov-data').append(parksObj.toHtml(completeData));
+            }
+          });
+        }
+        var text = $('option[value='+$(this).val()+']').text();
+        console.log(text);
         var parkName = $('option[value='+$(this).val()+']').text().toLowerCase().replace(/\W+/g, '+');
         $('#select-park').attr("href", "/park/" + parkName)
       });
