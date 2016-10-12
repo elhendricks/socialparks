@@ -51,7 +51,7 @@
         var text = $('option[value='+$(this).val()+']').text();
         console.log(text);
         var parkName = $('option[value='+$(this).val()+']').text().toLowerCase().replace(/\W+/g, '+');
-        $('#select-park').attr("href", "/park/" + parkName)
+        $('#select-park').attr("href", "/park/" + parkName);
       });
   };
 
