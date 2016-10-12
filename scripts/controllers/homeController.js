@@ -7,6 +7,7 @@
 
   homeController.npsPortion = function(cxt, next) {
     parksView.renderIndexPage();
+    parksView.handleParksFilter();
     next();
   };
 
