@@ -58,3 +58,84 @@ ul {
 li {
   list-style: none;
 }
+
+/*Form styles*/
+.compare {
+  background-color: lightgreen;
+  border-width: 1em;
+  border-color: green;
+  border-style: solid;
+  margin: auto;
+  max-width: 80%;
+  padding: 1em;
+  }
+
+.compare h3 {
+  font-size:1.25em;
+}
+
+.compare fieldset {
+  padding: 1em;
+  border: none;
+}
+
+
+.compare a {
+  display: block;
+  font-size: 1.25em;
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: .5em;
+}
+
+.compare label {
+  font-size: 1.1em;
+}
+
+.compare button {
+max-width: 30%;
+display: block;
+margin: auto;
+background-color: orange;
+border: none;
+border-radius: .25em;
+padding: 1em;
+font-size: 1.25em;
+font-weight: bold;
+color: white;
+}
+
+/*table styles*/
+
+#compare-results {
+  min-width: 90%;
+  border-style: solid;
+  border-color: darkgreen;
+  border-width: 3px;
+}
+
+#compare-results th {
+  padding: 1em;
+  font-size: 1.25em;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+}
+
+#compare-results td {
+  padding: 1em;
+  border-left: orange;
+  text-align: center;
+  background-color: lightgreen;
+
+}
+
+#compare-results h3 {
+  font-weight: bold;
+}
+
+#compare-results h4 {
+  font-weight: bold;
+}
+
+compare-results

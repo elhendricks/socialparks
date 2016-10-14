@@ -30,7 +30,7 @@
 
       <tr data-compare="designation">
         <td>
-          Park Designation
+          <h3>Park Designation</h3>
         </td>
         {{#each park}}
         <td>
@@ -41,7 +41,7 @@
 
       <tr data-compare="description">
         <td>
-          Park Description
+          <h3>Park Description</h3>
         </td>
         {{#each park}}
         <td>
@@ -52,7 +52,7 @@
 
       <tr data-compare="weather">
         <td>
-          Weather
+          <h3>Weather</h3>
         </td>
         {{#each park}}
         <td>
@@ -63,12 +63,12 @@
 
       <tr data-compare="address">
         <td>
-          Park Address
+          <h3>Park Address</h3>
         </td>
         {{#each park}}
         <td>
           {{#each addresses}}
-            <p>{{type}}</p>
+            <h4>{{type}}</h4>
             <p>{{line1}}</p>
             <p>{{city}}, {{stateCode}} {{postalCode}}</p>
           {{/each}}
@@ -78,12 +78,12 @@
 
       <tr data-compare="fees">
         <td>
-          Park Fees
+          <h3>Park Fees<h3>
         </td>
         {{#each park}}
         <td>
           {{#each entranceFees}}
-            <p>{{title}}</p>
+            <h4>{{title}}</h4>
             <p>{{description}}</p>
             <p>${{cost}}</p>
           {{/each}}
@@ -92,11 +92,11 @@
       </tr>
 
       <tr data-compare="passes">
-        <td>Entrance Passes</td>
+        <td><h3>Entrance Passes</h3></td>
         {{#each park}}
         <td>
           {{#each entrancePasses}}
-            <p>{{title}}</p>
+            <h4>{{title}}</h4>
             <p>{{description}}</p>
             <p>${{cost}}</p>
 
@@ -106,7 +106,7 @@
       </tr>
 
       <tr data-compare="hours">
-        <td>Park Hours</td>
+        <td><h3>Park Hours</h3></td>
         {{#each park}}
         <td>
           {{#each operatingHours}}
@@ -123,7 +123,7 @@
       </tr>
 
       <tr data-compare="email">
-        <td>Email</td>
+        <td><h3>Email</h3></td>
         {{#each park}}
         <td>
           {{#each contacts.emailAddresses}}
@@ -134,11 +134,11 @@
       </tr>
 
       <tr data-compare="telephone">
-        <td>Email</td>
+        <td>Telephone</td>
         {{#each park}}
         <td>
           {{#each contacts.phoneNumbers}}
-            <p>{{type}}</p>
+            <h4>{{type}}</h4>
             <p>{{phoneNumber}}</p>
           {{/each}}
         </td>
@@ -146,7 +146,7 @@
       </tr>
 
       <tr data-compare="website">
-        <td>Website</td>
+        <td><h3>Website</h3></td>
         {{#each park}}
         <td>
           {{url}}
@@ -316,24 +316,34 @@
         </div>
       </section>
       <section id="compare-form">
-        <form class="" action="#" method="#">
+        <form class="compare" action="#" method="#">
           <h3>What do you care about comparing?</h3>
 
             <fieldset class="experience"><a href="#">Experience</a>
-              <input type="checkbox" name="designation" value="designation">Park Designation
-              <input type="checkbox" name="weather" value="weather">Weather
-              <input type="checkbox" name="description" value="description">Description
+              <input type="checkbox" name="designation" value="designation">
+              <label for="designation">Park Designation</label>
+              <input type="checkbox" name="weather" value="weather">
+              <label for="weather">Weather</label>
+              <input type="checkbox" name="description" value="description">
+              <label for="description">Description</label>
             </fieldset>
             <fieldset class="entrance"><a href="#">Park Entrance</a>
-              <input type="checkbox" name="address" value="address">Address
-              <input type="checkbox" name="fees" value="fees">Fees
-              <input type="checkbox" name="passes" value="passes">Passes
-              <input type="checkbox" name="hours" value="hours">Park Hours
+              <input type="checkbox" name="address" value="address">
+              <label for="address">Address</label>
+              <input type="checkbox" name="fees" value="fees">
+              <label for="fees">Fees</label>
+              <input type="checkbox" name="passes" value="passes">
+              <label for="passes">Passes</label>
+              <input type="checkbox" name="hours" value="hours">
+              <label for="hours">Park Hours</label>
             </fieldset>
             <fieldset class="contact"><a href="#">Contact Info</a>
-              <input type="checkbox" value="email">Email
-              <input type="checkbox" value="phone">Telephone
-              <input type="checkbox" name="website" value="website">Website
+              <input type="checkbox" name="email" value="email">
+              <label for="email">Email</label>
+              <input type="checkbox" name="phone" value="phone">
+              <label for="phone">Telephone</label>
+              <input type="checkbox" name="website" value="website">
+              <label for="website">Website</label>
             </fieldset>
             <button type="submit">Compare</button>
         </form>

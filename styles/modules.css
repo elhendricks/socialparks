@@ -199,6 +199,10 @@
     font-size: 1.5em;
   }
 
+  .compare {
+    max-width: 60%;
+  }
+
   #park-name-des h2 {
     padding: .5em;
   }
@@ -206,6 +210,8 @@
   #park-header {
     height: 50vh;
   }
+
+
 
 }
 
@@ -227,4 +233,8 @@
     display: inline-block;
     width: 45%;
     float: right;
+  }
+
+  .compare {
+    max-width: 50%;
   }
